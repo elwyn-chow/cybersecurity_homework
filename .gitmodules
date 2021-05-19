@@ -1,0 +1,24 @@
+[submodule "homework_week09"]
+	path = homework_week09
+	url = https://2MvwUQtSsxiZyZFgAyCE@gitlab.com/elwyn5150/homework_week09.git
+[submodule "homework_week11"]
+	path = homework_week11
+	url = https://2MvwUQtSsxiZyZFgAyCE@gitlab.com/elwyn5150/homework_week11.git
+[submodule "homework_week08"]
+	path = homework_week08
+	url = https://2MvwUQtSsxiZyZFgAyCE@gitlab.com/elwyn5150/homework_week08.git
+[submodule "homework_week06"]
+	path = homework_week06
+	url = https://2MvwUQtSsxiZyZFgAyCE@gitlab.com/elwyn5150/homework_week06.git
+[submodule "homework_week05"]
+	path = homework_week05
+	url = https://2MvwUQtSsxiZyZFgAyCE@gitlab.com/elwyn5150/homework_week05.git
+[submodule "homework_week04"]
+	path = homework_week04
+	url = https://2MvwUQtSsxiZyZFgAyCE@gitlab.com/elwyn5150/homework_week04.git
+[submodule "homework_week03"]
+	path = homework_week03
+	url = https://2MvwUQtSsxiZyZFgAyCE@gitlab.com/elwyn5150/homework_week03.git
+[submodule "Linux/homework_week03"]
+	path = Linux/homework_week03
+	url = https://2MvwUQtSsxiZyZFgAyCE@gitlab.com/elwyn5150/homework_week03.git
