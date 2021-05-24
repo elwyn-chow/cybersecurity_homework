@@ -1,39 +1,51 @@
 ## Week 14 Homework: Web Development
 
-### Overview
-
-In this homework, we will review the many of the concepts and tools covered in the Web Development unit. If needed, refer to the  reference sheets provided to you.
-
-* [HTTP Reference Sheet](./HTTP_Reference.md)
-* [curl Reference Sheet](./cURL_Reference.md)
-
----
-
-### Questions 
-
-Before you work through the questions below, please create a new file and record your answers there. This will be your homework deliverable.
-
 #### HTTP Requests and Responses
 
 Answer the following questions about the HTTP request and response process.
 
 1. What type of architecture does the HTTP request and response process occur in?
 
+Client-server architecture.
+
 2. What are the different parts of an HTTP request? 
+
+* Request line
+* Headers
+* Request body
 
 3. Which part of an HTTP request is optional?
 
+The request body.
+
 4. What are the three parts of an HTTP response?
+
+* Status line
+* Headers
+* Reqsponse body
 
 5. Which number class of status codes represents errors?
 
+* 300 codes- multiple choices, meaning the server can respond to the request in more than one way.
+* 400 codes indicate client errors
+* 500 codes indicate server errors
+
 6. What are the two most common request methods that a security professional will encounter?
+
+* GET
+* POST
 
 7. Which type of HTTP request method is used for sending data?
 
+Put
+
 8. Which part of an HTTP request contains the data being sent to the server?
 
+HTTP Request body
+
 9. In which part of an HTTP response does the browser receive the web code to generate and style a web page?
+
+Status
 
 #### Using curl
 
@@ -41,13 +53,27 @@ Answer the following questions about `curl`:
 
 10. What are the advantages of using `curl` over the browser?
 
+* Can be run from command line and doesn't need a graphical user interface
+* It is fast to use it to download things or check that a web server or page is responding correctly
+
 11. Which `curl` option is used to change the request method?
+
+* -X
+* --request
 
 12. Which `curl` option is used to set request headers?
 
+* -H
+* --header
+
 13. Which `curl` option is used to view the response header?
 
+*  -I
+* --head
+
 14. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?
+
+OPTIONS
 
 #### Sessions and Cookies
 
@@ -63,6 +89,8 @@ Answer the following questions about sessions and cookies:
     Set-Cookie: cart=Bob
     ```
 
+Set-Cookie: cart=Bob
+
 16. Which request header will continue the client's session?
 
     ```HTTP
@@ -70,6 +98,8 @@ Answer the following questions about sessions and cookies:
     Host: www.example.org
     Cookie: cart=Bob
     ```
+
+Set-Cookie: cart=Bob
 
 #### Example HTTP Requests and Responses
 
