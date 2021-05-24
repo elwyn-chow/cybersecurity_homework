@@ -194,7 +194,7 @@ TODO
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?
 
-Platform as a service
+TODO: Platform as a service?
 
 #### Deploying and Testing a Container Set
 
@@ -214,14 +214,20 @@ YAML
 
 SELECT
 
-eg ```SQL
+eg
+
+```SQL
 SELECT * from customers
 ```
 
 
 32. Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)
 
+INSERT INTO
+
 33. Why would we never run `DELETE FROM <table-name>;` by itself?
+
+It would delete EVERY row of data from the table.
 
 ---
 
