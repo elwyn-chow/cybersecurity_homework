@@ -99,7 +99,7 @@ Set-Cookie: cart=Bob
     Cookie: cart=Bob
     ```
 
-Set-Cookie: cart=Bob
+Cookie: cart=Bob
 
 #### Example HTTP Requests and Responses
 
@@ -122,11 +122,19 @@ username=Barbara&password=password
 
 17. What is the request method?
 
+POST
+
 18. Which header expresses the client's preference for an encrypted response?
+
+Upgrade-Insecure-Requests: 1
 
 19. Does the request have a user session associated with it?
 
+No
+
 20. What kind of data is being sent from this request body?
+
+Login data that is unencrypted
 
 **HTTP Response**
 
@@ -149,13 +157,23 @@ X-XSS-Protection: 1; mode=block
 
 21. What is the response status code?
 
+200 - OK
+
 22. What web server is handling this HTTP response?
+
+Apache
 
 23. Does this response have a user session associated to it?
 
+Yes: "Set-Cookie: SessionID=5"
+
 24. What kind of content is likely to be in the [page content] response body?
 
+A login accepted page
+
 25. If your class covered security headers, what security request headers have been included?
+
+TODO
 
 #### Monoliths and Microservices
 
@@ -163,7 +181,11 @@ Answer the following questions about monoliths and microservices:
 
 26. What are the individual components of microservices called?
 
+Containers
+
 27. What is a service that writes to a database and communicates to other services?
+
+Database query
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?
 
