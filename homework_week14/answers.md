@@ -288,11 +288,16 @@ curl --cookie ./ryancookies.txt http://localhost:8081/wp-admin/index.php --verbo
 Yes, especially when opening it in a graphical web browser.
 
 [HTML only](4_1_response.html) 
-[Web page picture](4_1_response.JPG) 
+
+![Web page picture](4_1_response.JPG) 
 
 2. Press the up arrow on your keyboard to run the same command, but this time, pipe `| grep Dashboard` to the end of your command to return all instances of the word `Dashboard` on the page.
 
     - **Question:**  Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) If so, you should be successfully logged in to your Editor's dashboard.
+
+Yes. There's even a line that mentions my blog name "You Can Live At Home".
+
+![Dashboard grep picture](4_1_dashboard_grep.JPG) 
 
 #### Step 5: Test the Users.php Page
 
