@@ -385,7 +385,15 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 
 1. Construct a `curl` request that enters two forms: `"log={username}"` and `"pwd={password}"` and goes to `http://localhost:8080/wp-login.php`. Enter Ryan's credentials where there are placeholders.
 
+** Note:My Wordpress is running on port 8081, not 8080 **
+
     - **Question:** Did you see any obvious confirmation of a login? (Y/N)
+
+Not obvious. It generated a 302 (redirect) status. From the response, we can see that it will redirect to http://localhost:8081/wp-admin/ which is a page authenticated users can use.
+
+curl --form "log=Ryan" --form "pwd=123456" http://localhost:8081/wp-login.php --verbose
+
+[Response](3_1_response.txt)
 
 2. Construct the same `curl` request, but this time add the option and path to save your cookie: `--cookie-jar ./ryancookies.txt`. This option tells `curl` to save the cookies to the `ryancookies.txt` text file.
 
@@ -393,7 +401,6 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 
    - **Question:** How many items exist in this file?
 
-Note that each one of these is a cookie that was granted to Ryan after logging in.
 
 #### Step 4: Log in Using Cookies
 
