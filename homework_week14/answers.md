@@ -275,6 +275,8 @@ localhost	FALSE	/	FALSE	0	wordpress_test_cookie	WP%20Cookie%20check
 
 1. Craft a new `curl` command that now uses the `--cookie` option, followed by the path to your cookies file. For the URL, use `http://localhost:8080/wp-admin/index.php`.
 
+curl --cookie ./ryancookies.txt http://localhost:8080/wp-admin/users.php
+
    - **Question:** Is it obvious that we can access the Dashboard? (Y/N)
 
 2. Press the up arrow on your keyboard to run the same command, but this time, pipe `| grep Dashboard` to the end of your command to return all instances of the word `Dashboard` on the page.
