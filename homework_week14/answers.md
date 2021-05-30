@@ -22,7 +22,7 @@ The request body.
 
 * Status line
 * Headers
-* Reqsponse body
+* Response body
 
 5. Which number class of status codes represents errors?
 
