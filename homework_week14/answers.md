@@ -248,7 +248,8 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 
     - **Question:** Did you see any obvious confirmation of a login? (Y/N)
 
-Not obvious. It generated a 302 (redirect) status. From the response, we can see that it will redirect to http://localhost:8081/wp-admin/ which is a page authenticated users can use.
+Not obvious. It generated a [302](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302) (redirect) status. From the [response](3_1_response.txt)'s Location field, we can see that it will redirect to http://localhost:8081/wp-admin/ which is a page authenticated users can use.
+
 
 curl --form "log=Ryan" --form "pwd=123456" http://localhost:8081/wp-login.php --verbose
 
