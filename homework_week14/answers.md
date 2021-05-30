@@ -54,7 +54,9 @@ Answer the following questions about `curl`:
 10. What are the advantages of using `curl` over the browser?
 
 * Can be run from command line and doesn't need a graphical user interface
-* It is fast to use it to download things or check that a web server or page is responding correctly
+* It is fast and easy to use for download things or to check that a web server or page is responding correctly
+* It is a small download and quick to configure.
+* It has numerous options that a graphical browser doesn't have. These include the ability to modify its headers to appear to be a different sort of browser.
 
 11. Which `curl` option is used to change the request method?
 
@@ -190,11 +192,14 @@ Containers
 
 27. What is a service that writes to a database and communicates to other services?
 
-TODO
+I'm not sure the correct answer to this.
+A *query* is what writes to a database. 
+I think most of the containers are using *SSH* to communicate with each other. 
+The simplest network in Docker is the bridge network. It’s also Docker’s default networking driver. https://www.tutorialworks.com/container-networking/
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?
 
-TODO: Platform as a service?
+Platform as a service?
 
 #### Deploying and Testing a Container Set
 
