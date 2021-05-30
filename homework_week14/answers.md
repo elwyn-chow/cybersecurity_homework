@@ -37,7 +37,7 @@ The request body.
 
 7. Which type of HTTP request method is used for sending data?
 
-Put
+PUT
 
 8. Which part of an HTTP request contains the data being sent to the server?
 
@@ -232,7 +232,7 @@ INSERT INTO
 
 33. Why would we never run `DELETE FROM <table-name>;` by itself?
 
-It would delete EVERY row of data from the table.
+It would delete **every** row of data from the table.
 
 ---
 
