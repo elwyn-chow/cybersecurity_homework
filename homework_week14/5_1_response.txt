@@ -1,0 +1,142 @@
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8081 (#0)
+> GET /wp-admin/users.php HTTP/1.1
+> Host: localhost:8081
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Cookie: wordpress_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622564805%7CYgRKW8hImsilsI8auYu7fhfnUrgqbyLkM6Yn4Fl5zXl%7C430178c467e504b7ee85b397a14e4347a28a72dd9171097e6f1513907682ae87; wordpress_logged_in_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622564805%7CYgRKW8hImsilsI8auYu7fhfnUrgqbyLkM6Yn4Fl5zXl%7C326fa3079100d3d7706cefb7e4737332d18d28ab603b9138a0a4f7a7ed165db9; wordpress_test_cookie=WP%20Cookie%20check
+> 
+< HTTP/1.1 403 Forbidden
+< Date: Sun, 30 May 2021 16:46:47 GMT
+< Server: Apache/2.4.38 (Debian)
+< X-Powered-By: PHP/7.4.19
+< Expires: Wed, 11 Jan 1984 05:00:00 GMT
+< Cache-Control: no-cache, must-revalidate, max-age=0
+< X-Frame-Options: SAMEORIGIN
+< Referrer-Policy: strict-origin-when-cross-origin
+< Content-Length: 2660
+< Content-Type: text/html; charset=UTF-8
+< 
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width">
+		<meta name='robots' content='max-image-preview:large, noindex, follow' />
+	<title>WordPress &rsaquo; Error</title>
+	<style type="text/css">
+		html {
+			background: #f1f1f1;
+		}
+		body {
+			background: #fff;
+			border: 1px solid #ccd0d4;
+			color: #444;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+			margin: 2em auto;
+			padding: 1em 2em;
+			max-width: 700px;
+			-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+			box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+		}
+		h1 {
+			border-bottom: 1px solid #dadada;
+			clear: both;
+			color: #666;
+			font-size: 24px;
+			margin: 30px 0 0 0;
+			padding: 0;
+			padding-bottom: 7px;
+		}
+		#error-page {
+			margin-top: 50px;
+		}
+		#error-page p,
+		#error-page .wp-die-message {
+			font-size: 14px;
+			line-height: 1.5;
+			margin: 25px 0 20px;
+		}
+		#error-page code {
+			font-family: Consolas, Monaco, monospace;
+		}
+		ul li {
+			margin-bottom: 10px;
+			font-size: 14px ;
+		}
+		a {
+			color: #0073aa;
+		}
+		a:hover,
+		a:active {
+			color: #006799;
+		}
+		a:focus {
+			color: #124964;
+			-webkit-box-shadow:
+				0 0 0 1px #5b9dd9,
+				0 0 2px 1px rgba(30, 140, 190, 0.8);
+			box-shadow:
+				0 0 0 1px #5b9dd9,
+				0 0 2px 1px rgba(30, 140, 190, 0.8);
+			outline: none;
+		}
+		.button {
+			background: #f3f5f6;
+			border: 1px solid #016087;
+			color: #016087;
+			display: inline-block;
+			text-decoration: none;
+			font-size: 13px;
+			line-height: 2;
+			height: 28px;
+			margin: 0;
+			padding: 0 10px 1px;
+			cursor: pointer;
+			-webkit-border-radius: 3px;
+			-webkit-appearance: none;
+			border-radius: 3px;
+			white-space: nowrap;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing:    border-box;
+			box-sizing:         border-box;
+
+			vertical-align: top;
+		}
+
+		.button.button-large {
+			line-height: 2.30769231;
+			min-height: 32px;
+			padding: 0 12px;
+		}
+
+		.button:hover,
+		.button:focus {
+			background: #f1f1f1;
+		}
+
+		.button:focus {
+			background: #f3f5f6;
+			border-color: #007cba;
+			-webkit-box-shadow: 0 0 0 1px #007cba;
+			box-shadow: 0 0 0 1px #007cba;
+			color: #016087;
+			outline: 2px solid transparent;
+			outline-offset: 0;
+		}
+
+		.button:active {
+			background: #f3f5f6;
+			border-color: #7e8993;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+
+			</style>
+</head>
+<body id="error-page">
+	<div class="wp-die-message"><h1>You need a higher level of permission.</h1><p>Sorry, you are not allowed to list users.</p></div></body>
+</html>
+* Connection #0 to host localhost left intact
+

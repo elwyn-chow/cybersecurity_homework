@@ -303,7 +303,16 @@ Yes. There's even a line that mentions my blog name "You Can Live At Home".
 
 1. Finally, write a `curl` command using the same `--cookie ryancookies.txt` option, but attempt to access `http://localhost:8080/wp-admin/users.php`.
 
+curl --cookie ./ryancookies.txt http://localhost:8081/wp-admin/users.php --verbose
+
     - **Question:** What happens this time?
+
+[403 Response](5_1_response.txt) 
+
+[HTML Respose](5_2_response.html)
+
+The response code is 403 - access denied. Inside the HTML response body is the message "You need a higher level of permission.</h1><p>Sorry, you are not allowed to list users.".
+This was the expected response as Ryan only has editor level priviledges and was trying to access administrator level priviledges.
 
 ---
 
