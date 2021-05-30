@@ -6,22 +6,24 @@
 > User-Agent: curl/7.58.0
 > Accept: */*
 > Content-Length: 240
-> Content-Type: multipart/form-data; boundary=------------------------1409768b66e538e1
+> Content-Type: multipart/form-data; boundary=------------------------59cc403b04819cc0
 > 
 < HTTP/1.1 302 Found
-< Date: Sun, 30 May 2021 15:38:32 GMT
+< Date: Sun, 30 May 2021 16:25:19 GMT
 < Server: Apache/2.4.38 (Debian)
 < X-Powered-By: PHP/7.4.19
 < Expires: Wed, 11 Jan 1984 05:00:00 GMT
 < Cache-Control: no-cache, must-revalidate, max-age=0
 < Set-Cookie: wordpress_test_cookie=WP%20Cookie%20check; path=/
 < X-Frame-Options: SAMEORIGIN
-< Set-Cookie: wordpress_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622561912%7CIppOEvWGg1Zj4xGXvlfTakQg9mBvgznRGtghCwSnAPo%7Ccf6936c751ed1f9053c9cfd1aca179de321059c2b80d96da8c579f72ea118e9f; path=/wp-content/plugins; HttpOnly
-< Set-Cookie: wordpress_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622561912%7CIppOEvWGg1Zj4xGXvlfTakQg9mBvgznRGtghCwSnAPo%7Ccf6936c751ed1f9053c9cfd1aca179de321059c2b80d96da8c579f72ea118e9f; path=/wp-admin; HttpOnly
-< Set-Cookie: wordpress_logged_in_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622561912%7CIppOEvWGg1Zj4xGXvlfTakQg9mBvgznRGtghCwSnAPo%7C7ac9cf9844e7182a4c96b79460da4ede2a75c33a077f983c63b8ff25f56c6460; path=/; HttpOnly
+< Set-Cookie: wordpress_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622564720%7Cd85hJY7y7wgiD7uVmn3w38gifFQnBdR9jlxb0DlMaWT%7C11ea81245cd1679bf9dd90433fabccfdeafceda685e89b3c7c92fc5527052d37; path=/wp-content/plugins; HttpOnly
+< Set-Cookie: wordpress_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622564720%7Cd85hJY7y7wgiD7uVmn3w38gifFQnBdR9jlxb0DlMaWT%7C11ea81245cd1679bf9dd90433fabccfdeafceda685e89b3c7c92fc5527052d37; path=/wp-admin; HttpOnly
+< Set-Cookie: wordpress_logged_in_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622564720%7Cd85hJY7y7wgiD7uVmn3w38gifFQnBdR9jlxb0DlMaWT%7C316638778fb1b540d0d973de49cd88b027e7f2613fc800347028d76f2d3992c6; path=/; HttpOnly
 < X-Redirect-By: WordPress
 < Location: http://localhost:8081/wp-admin/
 < Content-Length: 0
 < Content-Type: text/html; charset=UTF-8
 * HTTP error before end of send, stop sending
+< 
+* Closing connection 0
 

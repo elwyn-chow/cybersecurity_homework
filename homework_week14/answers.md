@@ -257,17 +257,20 @@ curl --form "log=Ryan" --form "pwd=123456" http://localhost:8081/wp-login.php --
 
 2. Construct the same `curl` request, but this time add the option and path to save your cookie: `--cookie-jar ./ryancookies.txt`. This option tells `curl` to save the cookies to the `ryancookies.txt` text file.
 
-curl --cookie-jar ./ryancookies.txt "log=Ryan" --form "pwd=123456" http://localhost:8081/wp-login.php --verbose
+curl --cookie-jar ./ryancookies.txt --form "log=Ryan" --form "pwd=123456" http://localhost:8081/wp-login.php --verbose
 
-[200 Response](3_2_response.txt)
+[200 Response](3_2_response.txt) 
 
 3. Read the contents of the `ryancookies.txt` file.
 
    - **Question:** How many items exist in this file?
 
-One
+Three
+
 ```text
-localhost	FALSE	/	FALSE	0	wordpress_test_cookie	WP%20Cookie%20check
+#HttpOnly_localhost	FALSE	/wp-content/plugins	FALSE	0	wordpress_8dec71ede39ad9ff3b3fbc03311bdc45	Ryan%7C1622564805%7CYgRKW8hImsilsI8auYu7fhfnUrgqbyLkM6Yn4Fl5zXl%7C430178c467e504b7ee85b397a14e4347a28a72dd9171097e6f1513907682ae87
+#HttpOnly_localhost	FALSE	/wp-admin	FALSE	0	wordpress_8dec71ede39ad9ff3b3fbc03311bdc45	Ryan%7C1622564805%7CYgRKW8hImsilsI8auYu7fhfnUrgqbyLkM6Yn4Fl5zXl%7C430178c467e504b7ee85b397a14e4347a28a72dd9171097e6f1513907682ae87
+#HttpOnly_localhost	FALSE	/	FALSE	0	wordpress_logged_in_8dec71ede39ad9ff3b3fbc03311bdc45Ryan%7C1622564805%7CYgRKW8hImsilsI8auYu7fhfnUrgqbyLkM6Yn4Fl5zXl%7C326fa3079100d3d7706cefb7e4737332d18d28ab603b9138a0a4f7a7ed165db9
 ```
 
 [ryancookies.txt](ryancookies.txt)
@@ -276,9 +279,16 @@ localhost	FALSE	/	FALSE	0	wordpress_test_cookie	WP%20Cookie%20check
 
 1. Craft a new `curl` command that now uses the `--cookie` option, followed by the path to your cookies file. For the URL, use `http://localhost:8080/wp-admin/index.php`.
 
-curl --cookie ./ryancookies.txt http://localhost:8080/wp-admin/users.php
+curl --cookie ./ryancookies.txt http://localhost:8081/wp-admin/index.php --verbose
+
+[200 Response](4_1_response.txt) 
 
    - **Question:** Is it obvious that we can access the Dashboard? (Y/N)
+
+Yes, especially when opening it in a graphical web browser.
+
+[HTML only](4_1_response.html) 
+[Web page picture](4_1_response.JPG) 
 
 2. Press the up arrow on your keyboard to run the same command, but this time, pipe `| grep Dashboard` to the end of your command to return all instances of the word `Dashboard` on the page.
 

@@ -5,11 +5,41 @@
 > Host: localhost:8081
 > User-Agent: curl/7.58.0
 > Accept: */*
-> Content-Length: 253
-> Content-Type: multipart/form-data; boundary=------------------------8126abdaa69d447d
+> Content-Length: 240
+> Content-Type: multipart/form-data; boundary=------------------------59cc403b04819cc0
 > 
-< HTTP/1.1 200 OK
-< Date: Sun, 30 May 2021 15:43:38 GMT
+< HTTP/1.1 302 Found
+< Date: Sun, 30 May 2021 16:25:19 GMT
+< Server: Apache/2.4.38 (Debian)
+< X-Powered-By: PHP/7.4.19
+< Expires: Wed, 11 Jan 1984 05:00:00 GMT
+< Cache-Control: no-cache, must-revalidate, max-age=0
+< Set-Cookie: wordpress_test_cookie=WP%20Cookie%20check; path=/
+< X-Frame-Options: SAMEORIGIN
+< Set-Cookie: wordpress_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622564720%7Cd85hJY7y7wgiD7uVmn3w38gifFQnBdR9jlxb0DlMaWT%7C11ea81245cd1679bf9dd90433fabccfdeafceda685e89b3c7c92fc5527052d37; path=/wp-content/plugins; HttpOnly
+< Set-Cookie: wordpress_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622564720%7Cd85hJY7y7wgiD7uVmn3w38gifFQnBdR9jlxb0DlMaWT%7C11ea81245cd1679bf9dd90433fabccfdeafceda685e89b3c7c92fc5527052d37; path=/wp-admin; HttpOnly
+< Set-Cookie: wordpress_logged_in_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622564720%7Cd85hJY7y7wgiD7uVmn3w38gifFQnBdR9jlxb0DlMaWT%7C316638778fb1b540d0d973de49cd88b027e7f2613fc800347028d76f2d3992c6; path=/; HttpOnly
+< X-Redirect-By: WordPress
+< Location: http://localhost:8081/wp-admin/
+< Content-Length: 0
+< Content-Type: text/html; charset=UTF-8
+* HTTP error before end of send, stop sending
+< 
+* Closing connection 0
+sysadmin@UbuntuDesktop:~/Homework/cybersecurity_homework/homework_week14$ vim 3_1_response.txt
+sysadmin@UbuntuDesktop:~/Homework/cybersecurity_homework/homework_week14$ curl --cookie-jar ./ryancookies.txt --form "log=Ryan" --form "pwd=123456" http://localhost:8081/wp-login.php --verbose
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8081 (#0)
+> POST /wp-login.php HTTP/1.1
+> Host: localhost:8081
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Length: 240
+> Content-Type: multipart/form-data; boundary=------------------------ce8bfe6f42ebbfab
+> 
+< HTTP/1.1 302 Found
+< Date: Sun, 30 May 2021 16:25:52 GMT
 < Server: Apache/2.4.38 (Debian)
 < X-Powered-By: PHP/7.4.19
 < Expires: Wed, 11 Jan 1984 05:00:00 GMT
@@ -19,118 +49,26 @@
 * Added cookie wordpress_test_cookie="WP%20Cookie%20check" for domain localhost, path /, expire 0
 < Set-Cookie: wordpress_test_cookie=WP%20Cookie%20check; path=/
 < X-Frame-Options: SAMEORIGIN
-< Vary: Accept-Encoding
-< Content-Length: 7581
+* cookie size: name/val 42 + 130 bytes
+* cookie size: name/val 4 + 19 bytes
+* cookie size: name/val 8 + 0 bytes
+* Added cookie wordpress_8dec71ede39ad9ff3b3fbc03311bdc45="Ryan%7C1622564752%7C8pqFH2r3VzrLQpleAXn90CTk7xtAbddVo06LTdYFRgf%7Cc5afa725e9b1786894b3f5921c64818a739ab8302a95b046fb546a42d8aec47e" for domain localhost, path /wp-content/plugins, expire 0
+< Set-Cookie: wordpress_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622564752%7C8pqFH2r3VzrLQpleAXn90CTk7xtAbddVo06LTdYFRgf%7Cc5afa725e9b1786894b3f5921c64818a739ab8302a95b046fb546a42d8aec47e; path=/wp-content/plugins; HttpOnly
+* cookie size: name/val 42 + 130 bytes
+* cookie size: name/val 4 + 9 bytes
+* cookie size: name/val 8 + 0 bytes
+* Added cookie wordpress_8dec71ede39ad9ff3b3fbc03311bdc45="Ryan%7C1622564752%7C8pqFH2r3VzrLQpleAXn90CTk7xtAbddVo06LTdYFRgf%7Cc5afa725e9b1786894b3f5921c64818a739ab8302a95b046fb546a42d8aec47e" for domain localhost, path /wp-admin, expire 0
+< Set-Cookie: wordpress_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622564752%7C8pqFH2r3VzrLQpleAXn90CTk7xtAbddVo06LTdYFRgf%7Cc5afa725e9b1786894b3f5921c64818a739ab8302a95b046fb546a42d8aec47e; path=/wp-admin; HttpOnly
+* cookie size: name/val 52 + 130 bytes
+* cookie size: name/val 4 + 1 bytes
+* cookie size: name/val 8 + 0 bytes
+* Added cookie wordpress_logged_in_8dec71ede39ad9ff3b3fbc03311bdc45="Ryan%7C1622564752%7C8pqFH2r3VzrLQpleAXn90CTk7xtAbddVo06LTdYFRgf%7Cc0aea7acd13e463e0f8ba8642b3b9d4ffc1690fb3bff9b3eaeee30807026f91a" for domain localhost, path /, expire 0
+< Set-Cookie: wordpress_logged_in_8dec71ede39ad9ff3b3fbc03311bdc45=Ryan%7C1622564752%7C8pqFH2r3VzrLQpleAXn90CTk7xtAbddVo06LTdYFRgf%7Cc0aea7acd13e463e0f8ba8642b3b9d4ffc1690fb3bff9b3eaeee30807026f91a; path=/; HttpOnly
+< X-Redirect-By: WordPress
+< Location: http://localhost:8081/wp-admin/
+< Content-Length: 0
 < Content-Type: text/html; charset=UTF-8
+* HTTP error before end of send, stop sending
 < 
-<!DOCTYPE html>
-	<html lang="en-US">
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Log In &lsaquo; You Can Live At Home &#8212; WordPress</title>
-	<meta name='robots' content='max-image-preview:large, noindex, noarchive' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='dashicons-css'  href='http://localhost:8081/wp-includes/css/dashicons.min.css?ver=5.7.2' media='all' />
-<link rel='stylesheet' id='buttons-css'  href='http://localhost:8081/wp-includes/css/buttons.min.css?ver=5.7.2' media='all' />
-<link rel='stylesheet' id='forms-css'  href='http://localhost:8081/wp-admin/css/forms.min.css?ver=5.7.2' media='all' />
-<link rel='stylesheet' id='l10n-css'  href='http://localhost:8081/wp-admin/css/l10n.min.css?ver=5.7.2' media='all' />
-<link rel='stylesheet' id='login-css'  href='http://localhost:8081/wp-admin/css/login.min.css?ver=5.7.2' media='all' />
-	<meta name='referrer' content='strict-origin-when-cross-origin' />
-		<meta name="viewport" content="width=device-width" />
-		</head>
-	<body class="login no-js login-action-login wp-core-ui  locale-en-us">
-	<script type="text/javascript">
-		document.body.className = document.body.className.replace('no-js','js');
-	</script>
-		<div id="login">
-		<h1><a href="https://wordpress.org/">Powered by WordPress</a></h1>
-	<div id="login_error">	<strong>Error</strong>: The username field is empty.<br />
-	<strong>Error</strong>: The password field is empty.<br />
-</div>
-
-		<form name="loginform" id="loginform" action="http://localhost:8081/wp-login.php" method="post">
-			<p>
-				<label for="user_login">Username or Email Address</label>
-				<input type="text" name="log" id="user_login" aria-describedby="login_error" class="input" value="" size="20" autocapitalize="off" />
-			</p>
-
-			<div class="user-pass-wrap">
-				<label for="user_pass">Password</label>
-				<div class="wp-pwd">
-					<input type="password" name="pwd" id="user_pass" aria-describedby="login_error" class="input password-input" value="" size="20" />
-					<button type="button" class="button button-secondary wp-hide-pw hide-if-no-js" data-toggle="0" aria-label="Show password">
-						<span class="dashicons dashicons-visibility" aria-hidden="true"></span>
-					</button>
-				</div>
-			</div>
-						<p class="forgetmenot"><input name="rememberme" type="checkbox" id="rememberme" value="forever"  /> <label for="rememberme">Remember Me</label></p>
-			<p class="submit">
-				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In" />
-									<input type="hidden" name="redirect_to" value="http://localhost:8081/wp-admin/" />
-									<input type="hidden" name="testcookie" value="1" />
-			</p>
-		</form>
-
-					<p id="nav">
-								<a href="http://localhost:8081/wp-login.php?action=lostpassword">Lost your password?</a>
-			</p>
-					<script type="text/javascript">
-			function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
-wp_attempt_focus();
-if ( typeof wpOnload === 'function' ) { wpOnload() }		</script>
-				<p id="backtoblog">
-			<a href="http://localhost:8081/">&larr; Go to You Can Live At Home</a>		</p>
-			</div>
-		<script type="text/javascript">
-	document.querySelector('form').classList.add('shake');
-	</script>
-	<script src='http://localhost:8081/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
-<script src='http://localhost:8081/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
-<script id='zxcvbn-async-js-extra'>
-var _zxcvbnSettings = {"src":"http:\/\/localhost:8081\/wp-includes\/js\/zxcvbn.min.js"};
-</script>
-<script src='http://localhost:8081/wp-includes/js/zxcvbn-async.min.js?ver=1.0' id='zxcvbn-async-js'></script>
-<script src='http://localhost:8081/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
-<script id='wp-polyfill-js-after'>
-( 'fetch' in window ) || document.write( '<script src="http://localhost:8081/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="http://localhost:8081/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="http://localhost:8081/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="http://localhost:8081/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="http://localhost:8081/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="http://localhost:8081/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="http://localhost:8081/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
-</script>
-<script src='http://localhost:8081/wp-includes/js/dist/hooks.min.js?ver=50e23bed88bcb9e6e14023e9961698c1' id='wp-hooks-js'></script>
-<script src='http://localhost:8081/wp-includes/js/dist/i18n.min.js?ver=db9a9a37da262883343e941c3731bc67' id='wp-i18n-js'></script>
-<script id='wp-i18n-js-after'>
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-</script>
-<script id='password-strength-meter-js-extra'>
-var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
-</script>
-<script id='password-strength-meter-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script src='http://localhost:8081/wp-admin/js/password-strength-meter.min.js?ver=5.7.2' id='password-strength-meter-js'></script>
-<script src='http://localhost:8081/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
-<script id='wp-util-js-extra'>
-var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
-</script>
-<script src='http://localhost:8081/wp-includes/js/wp-util.min.js?ver=5.7.2' id='wp-util-js'></script>
-<script id='user-profile-js-extra'>
-var userProfileL10n = {"user_id":"0","nonce":"13d9278d53"};
-</script>
-<script id='user-profile-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script src='http://localhost:8081/wp-admin/js/user-profile.min.js?ver=5.7.2' id='user-profile-js'></script>
-	<script>
-	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
-	</script>
-		<div class="clear"></div>
-	</body>
-	</html>
-* Connection #0 to host localhost left intact
+* Closing connection 0
 
