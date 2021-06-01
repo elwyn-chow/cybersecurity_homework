@@ -1,0 +1,7 @@
+#Web Application 1: Your Wish is My Command Injection
+
+## Mitigation strategies
+
+The server-side code should parse the user input and run validation. 
+* It is very easy to write Perl/PHP/Python code to check that the user is entering only a valid IP address. eg check that it matches a regular expression of /^\d+\.\d+\.\d+\.\d+$/
+* The HTML code can be written such that a drop down menu shows a whitelist of IP addresses and refuse to run on anythhing that is not on that whitelist.
