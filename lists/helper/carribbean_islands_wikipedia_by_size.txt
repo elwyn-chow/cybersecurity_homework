@@ -1,0 +1,127 @@
+1	Cuba	105,806	40,852	Cuba United States (Guantanamo Bay Naval Base)
+2	Hispaniola	76,479	29,529	Haiti and	Dominican Republic
+3	Jamaica	11,188	4,320	Jamaica
+4	Puerto Rico	8,896	3,435	Puerto Rico Puerto Rico
+5	Trinidad	4,827	1,864	Trinidad and Tobago
+6	North Andros Island	3,439	1,328	Bahamas
+7	Isla de la Juventud	2,237	864	Cuba
+8	Great Inagua Island	1,543	596	Bahamas
+9	South Andros Island	1,447	559	Bahamas
+10	Grand Bahama Island	1,373	530	Bahamas
+11	Great Abaco Island	1,144	442	Bahamas
+12	Martinique	1,128	436	Martinique
+13	Isla Margarita	1,020	394	Venezuela
+14	Basse-Terre	848	327	Guadeloupe
+15	Cayo Romano	777	300	Cuba
+16	Dominica	750	290	Dominica
+17	Gonâve	743	287	Haiti
+18	Cozumel	647	250	Mexico
+19	Saint Lucia	616	238	Saint Lucia
+20	Grande-Terre	587	226	Guadeloupe
+21	Little Abaco Island	559	216	Bahamas
+22	Eleuthera	518	200	Bahamas
+23	Acklins Island	497	192	Bahamas
+24	Long Island	448	173	Bahamas
+25	Curaçao	444	171	Curaçao
+26	Barbados	431	167	Barbados
+27	Cat Island	389	150	Bahamas
+28	Cayo Coco	370	143	Cuba
+29	Saint Vincent	345	133	Saint Vincent and the Grenadines
+30	Cayo Sabinal	335	129	Cuba
+31	Grenada	310	120	Grenada
+32	Tobago	300	116	Trinidad and Tobago
+33	Bonaire	294	113	Caribbean Netherlands
+34	Mayaguana	280	110	Bahamas
+35	Antigua	279	108	Antigua and Barbuda
+36	Saint Croix	214	82	United States Virgin Islands
+37	New Providence	207	80	Bahamas
+38	Grand Cayman	196	76	Cayman Islands
+39	Aruba	180	74	Aruba
+40	Tortuga	178	69	Haiti
+41	Saint Kitts	168	65	Saint Kitts and Nevis
+42	San Salvador Island	163	63	Bahamas
+43	Barbuda	161	61	Antigua and Barbuda
+44	Marie Galante	158	61	Guadeloupe
+45	Great Exuma	158	61	Bahamas
+46	La Tortuga Island	156.6	61	Venezuela
+47	Crooked Island	148	57	Bahamas
+48	Middle Caicos	144.2	56	Turks and Caicos Islands
+49	Vieques	135	52	Puerto Rico Puerto Rico
+50	Little Inagua	127	49	Bahamas
+51	Roatan	125	48	Honduras
+52	North Caicos	116.4	45	Turks and Caicos Islands
+53	Saona Island	110	42	Dominican Republic
+54	Cayo Guajaba	107	41	Cuba
+55	Montserrat	102	39	Montserrat
+56	Cayo Fragoso	101	39	Cuba
+57	Providenciales	98	38	Turks and Caicos Islands
+58	Nevis	93	36	Saint Kitts and Nevis
+59	Anguilla	91	35	Anguilla
+60	East Caicos	90.6	34	Turks and Caicos Islands
+61	Saint Martin	87	37	Saint Martin and	Sint Maarten
+62	Saint Thomas	80.91	31.23	United States Virgin Islands
+63	Rum Cay	78	30	Bahamas
+64	Ambergris Caye	65	25	Belize
+65	Blanquilla Island	64	25	Venezuela
+66	Colón Island	61	24	Panama
+67	Isla Mona	57	22	Puerto Rico Puerto Rico
+68	Coche Island	55	21	Venezuela
+69	Tortola	55.7	21.5	British Virgin Islands
+70	Guanaja	55	-	Honduras
+71	Popa Island	53	-	Panama
+72	Bastimentos Island	52	-	Panama
+73	Île à Vache	52	20	Haiti
+74	Saint John	51	19.6	United States Virgin Islands
+75	Útila	49	-	Honduras
+76	Grande Cayemite	45	17	Haiti
+77	Samana Cay	45	17	Bahamas
+78	Cayo Saetia	42	-	Cuba
+79	La Orchila	40	-	Venezuela
+80	Anegada	38	15	British Virgin Islands
+81	Cayo Largo del Sur	37.5	-	Cuba
+82	Cristóbal Island	37	-	Panama
+83	Cayman Brac	36	14	Cayman Islands
+84	Carriacou	34	13	Grenada
+85	Great Harbour Cay	32	-	Bahamas
+86	Culebra	30.1	-	Puerto Rico
+86	Little Exuma	29	11	Bahamas
+87	West Caicos	28	11	Turks and Caicos Islands
+88	Beata Island	27	10	Dominican Republic
+89	San Andrés	26	10	Colombia
+90	Little Cayman	26	10	Cayman Islands
+91	Cayo Cruz	26	10	Cuba
+92	Big Pine Key	25.8	10	United States
+93	Cubagua	24	-	Venezuela
+94	Ragged Island	23	9	Bahamas
+95	South Caicos	21.2	8	Turks and Caicos Islands
+96	Saint Barthélemy	21	8	Saint Barthélemy
+97	Sint Eustatius	21	8.1	Caribbean Netherlands
+98	Virgin Gorda	21	8	British Virgin Islands
+99	Long Cay	21	8	Bahamas
+100	La Désirade	20.64	-	Guadeloupe
+101	Tierra Bomba Island	19.8	-	Colombia
+102	Bequia	18.1	7	Saint Vincent and the Grenadines
+103	Grand Turk Island	17.39	6.71	Turks and Caicos Islands
+104	Providencia	17	-	Colombia
+105	Cayo Agua Island	16	-	Panama
+106	Cayo Grande	15.1	5.8	Venezuela
+107	Key West	13.65	5.27	United States
+108	Cayo Guillermo	13	-	Cuba
+109	Saba	13	5	Caribbean Netherlands
+110	Canouan	13	5	Saint Vincent and the Grenadines
+111	Big Corn Island	10	-	Nicaragua
+112	Little San Salvador Island	9.7	-	Bahamas
+113	Catalina Island	9.6	-	Dominican Republic
+114	Terre-de-Bas	9	-	Guadeloupe
+115	Conception Island	8.5	3	Bahamas
+116	Ronde Island	8.1	-	Grenada
+117	Jost Van Dyke	8	3	British Virgin Islands
+118	Union Island	8	3	Saint Vincent and the Grenadines
+119	Solarte Island	8	3	Panama
+120	Isleta de San Juan	7.8	3	Puerto Rico
+121	Salt Cay	6.74	2.60	Turks and Caicos Islands
+122	Klein Bonaire	6	2.3	Caribbean Netherlands
+123	Mustique	5.7	2.2	Saint Vincent and the Grenadines
+124	Navassa Island	5.2	2	United States (Claimed by	Haiti)
+125	Terre-de-Haut	5.2	-	Guadeloupe
+126	Isla Mujeres	5.2	2	Mexico
