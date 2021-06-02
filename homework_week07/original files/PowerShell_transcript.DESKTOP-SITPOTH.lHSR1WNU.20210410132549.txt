@@ -1,0 +1,364 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20210410132550
+Username: GOODCORP\sysadmin
+RunAs User: GOODCORP\sysadmin
+Configuration Name: 
+Machine: DESKTOP-SITPOTH (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 9000
+PSVersion: 5.1.19041.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1
+BuildVersion: 10.0.19041.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Command start time: 20210410132615
+**********************
+PS C:\Users\sysadmin.GOODCORP> dir
+
+
+    Directory: C:\Users\sysadmin.GOODCORP
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---          2/5/2021   7:35 PM                3D Objects
+d-r---          2/5/2021   7:35 PM                Contacts
+d-r---          2/5/2021   7:35 PM                Desktop
+d-r---         4/10/2021   1:25 PM                Documents
+d-r---          2/5/2021   7:35 PM                Downloads
+d-r---          2/5/2021   7:35 PM                Favorites
+d-r---          2/5/2021   7:35 PM                Links
+d-r---          2/5/2021   7:35 PM                Music
+d-r---          4/1/2021  10:06 AM                OneDrive
+d-r---          2/5/2021   7:35 PM                Pictures
+d-r---          2/5/2021   7:35 PM                Saved Games
+d-r---          2/5/2021   7:35 PM                Searches
+d-r---          2/5/2021   7:35 PM                Videos
+-a----         4/10/2021   1:18 PM             76 enum_acls.ps1
+-a----         4/10/2021  12:45 PM            456 task4.ps1
+
+
+**********************
+Command start time: 20210410132619
+**********************
+PS C:\Users\sysadmin.GOODCORP> cd .\Documents\
+**********************
+Command start time: 20210410132620
+**********************
+PS C:\Users\sysadmin.GOODCORP\Documents> dir
+
+
+    Directory: C:\Users\sysadmin.GOODCORP\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/10/2021   1:25 PM                20210410
+
+
+**********************
+Command start time: 20210410132633
+**********************
+PS C:\Users\sysadmin.GOODCORP\Documents> type .\20210410\
+**********************
+Windows PowerShell transcript start
+Start time: 20210410132633
+Username: GOODCORP\sysadmin
+RunAs User: GOODCORP\sysadmin
+Configuration Name: 
+Machine: DESKTOP-SITPOTH (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 9000
+PSVersion: 5.1.19041.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1
+BuildVersion: 10.0.19041.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Command start time: 20210410132633
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Could not find a part of the path 'C:\Users\sysadmin.GOODCORP\Documents\20210410\'."
+type : Could not find a part of the path 'C:\Users\sysadmin.GOODCORP\Documents\20210410\'.
+At line:1 char:1
++ type .\20210410\
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sysadm...ments\20210410\:String) [Get-Content], 
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : GetContentReaderDirectoryNotFoundError,Microsoft.PowerShell.Commands.GetContentCommand
+type : Could not find a part of the path 'C:\Users\sysadmin.GOODCORP\Documents\20210410\'.
+At line:1 char:1
++ type .\20210410\
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sysadm...ments\20210410\:String) [Get-Content], 
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : GetContentReaderDirectoryNotFoundError,Microsoft.PowerShell.Commands.GetContentCommand
+type : Could not find a part of the path 'C:\Users\sysadmin.GOODCORP\Documents\20210410\'.
+At line:1 char:1
++ type .\20210410\
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sysadm...ments\20210410\:String) [Get-Content], DirectoryNotFo
+   undException
+    + FullyQualifiedErrorId : GetContentReaderDirectoryNotFoundError,Microsoft.PowerShell.Commands.GetContentCommand
+
+**********************
+Command start time: 20210410132655
+**********************
+PS C:\Users\sysadmin.GOODCORP\Documents> file .\20210410\
+**********************
+Windows PowerShell transcript start
+Start time: 20210410132655
+Username: GOODCORP\sysadmin
+RunAs User: GOODCORP\sysadmin
+Configuration Name: 
+Machine: DESKTOP-SITPOTH (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 9000
+PSVersion: 5.1.19041.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1
+BuildVersion: 10.0.19041.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Command start time: 20210410132655
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'file' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+file : The term 'file' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ file .\20210410\
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (file:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+file : The term 'file' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ file .\20210410\
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (file:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+file : The term 'file' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ file .\20210410\
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (file:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+**********************
+Command start time: 20210410132702
+**********************
+PS C:\Users\sysadmin.GOODCORP\Documents> cd .\20210410\
+**********************
+Command start time: 20210410132703
+**********************
+PS C:\Users\sysadmin.GOODCORP\Documents\20210410> dir
+
+
+    Directory: C:\Users\sysadmin.GOODCORP\Documents\20210410
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         4/10/2021   1:25 PM            603 PowerShell_transcript.DESKTOP-SITPOTH.lHSR1WNU.20210410132549.txt
+
+
+**********************
+Command start time: 20210410132709
+**********************
+PS C:\Users\sysadmin.GOODCORP\Documents\20210410> type .\PowerShell_transcript.DESKTOP-SITPOTH.lHSR1WNU.20210410132549.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20210410132550
+Username: GOODCORP\sysadmin
+RunAs User: GOODCORP\sysadmin
+Configuration Name:
+Machine: DESKTOP-SITPOTH (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 9000
+PSVersion: 5.1.19041.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1
+BuildVersion: 10.0.19041.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Command start time: 20210410132615
+**********************
+PS C:\Users\sysadmin.GOODCORP> dir
+
+
+    Directory: C:\Users\sysadmin.GOODCORP
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---          2/5/2021   7:35 PM                3D Objects
+d-r---          2/5/2021   7:35 PM                Contacts
+d-r---          2/5/2021   7:35 PM                Desktop
+d-r---         4/10/2021   1:25 PM                Documents
+d-r---          2/5/2021   7:35 PM                Downloads
+d-r---          2/5/2021   7:35 PM                Favorites
+d-r---          2/5/2021   7:35 PM                Links
+d-r---          2/5/2021   7:35 PM                Music
+d-r---          4/1/2021  10:06 AM                OneDrive
+d-r---          2/5/2021   7:35 PM                Pictures
+d-r---          2/5/2021   7:35 PM                Saved Games
+d-r---          2/5/2021   7:35 PM                Searches
+d-r---          2/5/2021   7:35 PM                Videos
+-a----         4/10/2021   1:18 PM             76 enum_acls.ps1
+-a----         4/10/2021  12:45 PM            456 task4.ps1
+
+
+**********************
+Command start time: 20210410132619
+**********************
+PS C:\Users\sysadmin.GOODCORP> cd .\Documents\
+**********************
+Command start time: 20210410132620
+**********************
+PS C:\Users\sysadmin.GOODCORP\Documents> dir
+
+
+    Directory: C:\Users\sysadmin.GOODCORP\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/10/2021   1:25 PM                20210410
+
+
+**********************
+Command start time: 20210410132633
+**********************
+PS C:\Users\sysadmin.GOODCORP\Documents> type .\20210410\
+**********************
+Windows PowerShell transcript start
+Start time: 20210410132633
+Username: GOODCORP\sysadmin
+RunAs User: GOODCORP\sysadmin
+Configuration Name:
+Machine: DESKTOP-SITPOTH (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 9000
+PSVersion: 5.1.19041.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1
+BuildVersion: 10.0.19041.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Command start time: 20210410132633
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="Could not find a part of the path 'C:\Users\sysadmin.GOODCORP\Documents\20210410\'."
+type : Could not find a part of the path 'C:\Users\sysadmin.GOODCORP\Documents\20210410\'.
+At line:1 char:1
++ type .\20210410\
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sysadm...ments\20210410\:String) [Get-Content],
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : GetContentReaderDirectoryNotFoundError,Microsoft.PowerShell.Commands.GetContentCommand
+type : Could not find a part of the path 'C:\Users\sysadmin.GOODCORP\Documents\20210410\'.
+At line:1 char:1
++ type .\20210410\
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sysadm...ments\20210410\:String) [Get-Content],
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : GetContentReaderDirectoryNotFoundError,Microsoft.PowerShell.Commands.GetContentCommand
+type : Could not find a part of the path 'C:\Users\sysadmin.GOODCORP\Documents\20210410\'.
+At line:1 char:1
++ type .\20210410\
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sysadm...ments\20210410\:String) [Get-Content], DirectoryNotFo
+   undException
+    + FullyQualifiedErrorId : GetContentReaderDirectoryNotFoundError,Microsoft.PowerShell.Commands.GetContentCommand
+
+**********************
+Command start time: 20210410132655
+**********************
+PS C:\Users\sysadmin.GOODCORP\Documents> file .\20210410\
+**********************
+Windows PowerShell transcript start
+Start time: 20210410132655
+Username: GOODCORP\sysadmin
+RunAs User: GOODCORP\sysadmin
+Configuration Name:
+Machine: DESKTOP-SITPOTH (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 9000
+PSVersion: 5.1.19041.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1
+BuildVersion: 10.0.19041.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Command start time: 20210410132655
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The term 'file' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+file : The term 'file' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ file .\20210410\
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (file:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+file : The term 'file' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ file .\20210410\
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (file:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+file : The term 'file' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ file .\20210410\
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (file:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+**********************
+Command start time: 20210410132702
+**********************
+PS C:\Users\sysadmin.GOODCORP\Documents> cd .\20210410\
+**********************
+Command start time: 20210410132703
+**********************
+PS C:\Users\sysadmin.GOODCORP\Documents\20210410> dir
+
+
+    Directory: C:\Users\sysadmin.GOODCORP\Documents\20210410
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         4/10/2021   1:25 PM            603 PowerShell_transcript.DESKTOP-SITPOTH.lHSR1WNU.20210410132549.txt
+
+

@@ -1,0 +1,62 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20210410133006
+Username: GOODCORP\sysadmin
+RunAs User: GOODCORP\sysadmin
+Configuration Name: 
+Machine: DESKTOP-SITPOTH (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell_ise.exe C:\Users\sysadmin.GOODCORP\Desktop\enum_acls.ps1
+Process ID: 8996
+PSVersion: 5.1.19041.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1
+BuildVersion: 10.0.19041.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Command start time: 20210410133006
+**********************
+PS>[Microsoft.Windows.PowerShell.Gui.Internal.HostTextWriter]::RegisterHost($host.ui)
+**********************
+Command start time: 20210410133007
+**********************
+PS>filter more { $_ }
+**********************
+Command start time: 20210410133007
+**********************
+PS>
+function psEdit([Parameter(Mandatory=$true)]$filenames)
+{
+    foreach ($filename in $filenames)
+    {
+        dir $filename | where {!$_.PSIsContainer} | %{
+            $psISE.CurrentPowerShellTab.Files.Add($_.FullName) > $null
+        }
+    }
+}
+**********************
+Command start time: 20210410133007
+**********************
+PS>$OutputEncoding = [System.Console]::OutputEncoding
+**********************
+Command start time: 20210410133007
+**********************
+PS>ipmo ISE
+**********************
+Command start time: 20210410133008
+**********************
+PS>CommandInvocation(Set-Variable): "Set-Variable"
+>> ParameterBinding(Set-Variable): name="Name"; value="profile"
+>> ParameterBinding(Set-Variable): name="Value"; value="C:\Users\sysadmin.GOODCORP\Documents\WindowsPowerShell\Microsoft.PowerShellISE_profile.ps1"
+>> ParameterBinding(Set-Variable): name="Option"; value="None"
+**********************
+Command start time: 20210410133008
+**********************
+PS C:\Windows\system32> @(Get-Command  -CommandType Cmdlet, Function, Script, ExternalScript, Workflow),@(get-module)
+**********************
+Windows PowerShell transcript end
+End time: 20210410133011
+**********************
