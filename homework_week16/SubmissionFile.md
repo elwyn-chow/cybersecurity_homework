@@ -61,6 +61,11 @@ The website https://otx.alienvault.com/indicator/ip/65.61.137.117/?utm_medium=In
 
 Is Altoro Mutual vulnerable to XSS: 
 
+Yes.
+![Recon-ng snapshot](recon-ng.jpg)
+
+Reference: http://xssed.com/mirror/57864
+
 ### Step 5: Zenmap
 
 Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server, complete the following:
