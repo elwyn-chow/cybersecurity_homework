@@ -9,13 +9,13 @@ Karl Fitzgerald
 
 - How can this information be helpful to an attacker:
 
-* We can use his name to deduce possible email addresses he has and his login ID. 
- Using the potential email addresses, we can launch whale-phishing attacks.
- Using the potential login IDs, we can try to crack his password.
-* We can research his public interests. We can use this information:
+* An attacker can use his name to deduce possible email addresses he has and his login ID. 
+   - Using the potential email addresses, the attacker can launch whale-phishing attacks.
+   - Using the potential login IDs, the attacker can try to crack his password.
+* The attacker can research the CEO's public interests and can use this information:
    - in phishing email attacks
    - to create dictionaries of words to brute force crack his password
-   - other social engineering attacks.
+* The attacker can perform social engineering attacks against other employees using tactics such as authority, intimidation and urgency.
 
 #### Step 2: DNS and Domain Discovery
 
@@ -23,11 +23,22 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 
   1. Where is the company located: 
 
+* City: Sunnyvale
+* State/Province: CA (California)
+* Postal Code: 94085
+* Country: US
+
   2. What is the NetRange IP address:
+
+65.61.137.64 - 65.61.137.127
 
   3. What is the company they use to store their infrastructure:
 
+Rackspace Backbone Engineering
+
   4. What is the IP address of the DNS server:
+
+65.61.137.117
 
 #### Step 3: Shodan
 
