@@ -72,14 +72,25 @@ Your client has asked that you help identify any vulnerabilities with their file
 
 - Command for Zenmap to run a service scan against the Metasploitable machine: 
  
+ nmap -sV 192.168.0.10
+ 
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
+
+nmap -oN zenmapscan.txt -sV 192.168.0.10
 
 - Zenmap vulnerability script command: 
 
+nmap --script samba-vuln-cve-2012-1182 192.168.0.10
+
 - Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
+  
+* https://www.cvedetails.com/cve/CVE-2012-1182/
+* https://nmap.org/nsedoc/scripts/samba-vuln-cve-2012-1182.html
 
   2. Why is it dangerous:
+
+Samba versions 3.6.3 and all versions previous to this are affected by a vulnerability that allows remote code execution as the "root" user from an anonymous connection.
 
   3. What mitigation strategies can you recommendations for the client to protect their server:
 
