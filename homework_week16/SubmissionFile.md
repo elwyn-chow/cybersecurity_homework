@@ -22,12 +22,10 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 
   1. Where is the company located: 
 
-* City: Sunnyvale
-* State/Province: CA (California)
-* Postal Code: 94085
-* Country: US
-
-
+    * City: Sunnyvale
+    * State/Province: CA (California)
+    * Postal Code: 94085
+    * Country: US
 
   2. What is the NetRange IP address:
 
