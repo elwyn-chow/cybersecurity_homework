@@ -49,9 +49,9 @@ Rackspace Backbone Engineering
 Shodan only found two open ports and services:
 * 80: Apache Tomcat/Coyote JSP engine1.1
 * 443: Apache Tomcat/Coyote JSP engine1.1
+* 8080: Apache Tomcat/Coyote JSP engine1.1
 
-However, there seems to be some indication that there used to be an open port at 8080. Sometimes port 8080 has a web server running on it.
-The website https://otx.alienvault.com/indicator/ip/65.61.137.117/?utm_medium=InProduct&&utm_source=ThreatCrowd lists 8080 as an open port.
+[shodan results](shodan.pdf)
 
 #### Step 4: Recon-ng
 
