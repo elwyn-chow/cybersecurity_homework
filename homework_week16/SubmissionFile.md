@@ -86,17 +86,17 @@ nmap --script samba-vuln-cve-2012-1182 192.168.0.10
 
   1. What is the vulnerability:
   
-   * https://www.cvedetails.com/cve/CVE-2012-1182/
-   * https://nmap.org/nsedoc/scripts/samba-vuln-cve-2012-1182.html
+    * https://www.cvedetails.com/cve/CVE-2012-1182/
+    * https://nmap.org/nsedoc/scripts/samba-vuln-cve-2012-1182.html
 
   2. Why is it dangerous:
 
-Samba versions 3.6.3 and all versions previous to this are affected by a vulnerability that allows remote code execution as the "root" user from an anonymous connection.
+    * Samba versions 3.6.3 and all versions previous to this are affected by a vulnerability that allows remote code execution as the "root" user from an anonymous connection.
 
   3. What mitigation strategies can you recommendations for the client to protect their server:
 
-   * Temporarily disable the Samba service until an upgrade can be performed.
-   * Schedule an upgrade to a version of Samba that is after 3.6.3
+    * Temporarily disable the Samba service until an upgrade can be performed.
+    * Schedule an upgrade to a version of Samba that is after 3.6.3
    
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
