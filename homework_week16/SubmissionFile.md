@@ -43,7 +43,7 @@ Rackspace Backbone Engineering
 
 - What open ports and running services did Shodan find:
 
-Shodan only found two open ports and services:
+Shodan only found three open ports and services:
 * 80: Apache Tomcat/Coyote JSP engine1.1
 * 443: Apache Tomcat/Coyote JSP engine1.1
 * 8080: Apache Tomcat/Coyote JSP engine1.1
