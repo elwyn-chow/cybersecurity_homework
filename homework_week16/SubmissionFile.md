@@ -83,10 +83,11 @@ nmap -oN zenmapscan.txt -sV 192.168.0.10
 nmap --script samba-vuln-cve-2012-1182 192.168.0.10
 
 - Once you have identified this vulnerability, answer the following questions for your client:
+- 
   1. What is the vulnerability:
   
-* https://www.cvedetails.com/cve/CVE-2012-1182/
-* https://nmap.org/nsedoc/scripts/samba-vuln-cve-2012-1182.html
+   * https://www.cvedetails.com/cve/CVE-2012-1182/
+   * https://nmap.org/nsedoc/scripts/samba-vuln-cve-2012-1182.html
 
   2. Why is it dangerous:
 
