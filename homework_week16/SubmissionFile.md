@@ -76,6 +76,8 @@ Your client has asked that you help identify any vulnerabilities with their file
 
 nmap -oN zenmapscan.txt -sV 192.168.0.10
 
+[zenmapscan.txt](zenmapscan.txt)
+
 - Zenmap vulnerability script command: 
 
 nmap --script samba-vuln-cve-2012-1182 192.168.0.10
