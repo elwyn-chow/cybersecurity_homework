@@ -8,14 +8,13 @@
 Karl Fitzgerald
 
 - How can this information be helpful to an attacker:
-
-* An attacker can use his name to deduce possible email addresses he has and his login ID. 
-   - Using the potential email addresses, the attacker can launch whale-phishing attacks.
-   - Using the potential login IDs, the attacker can try to crack his password.
-* The attacker can research the CEO's public interests and can use this information:
-   - in phishing email attacks
-   - to create dictionaries of words to brute force crack his password
-* The attacker can perform social engineering attacks against other employees using tactics such as authority, intimidation and urgency.
+   * An attacker can use his name to deduce possible email addresses he has and his login ID. 
+      - Using the potential email addresses, the attacker can launch whale-phishing attacks.
+      - Using the potential login IDs, the attacker can try to crack his password.
+   * The attacker can research the CEO's public interests and can use this information:
+      - in phishing email attacks
+      - to create dictionaries of words to brute force crack his password
+   * The attacker can perform social engineering attacks against other employees using tactics such as authority, intimidation and urgency.
 
 #### Step 2: DNS and Domain Discovery
 
