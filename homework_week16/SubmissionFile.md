@@ -59,6 +59,7 @@ Shodan only found three open ports and services:
 Is Altoro Mutual vulnerable to XSS: 
 
 Yes.
+
 ![Recon-ng snapshot](recon-ng.jpg)
 
 Reference: http://xssed.com/mirror/57864
