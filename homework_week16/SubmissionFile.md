@@ -95,5 +95,8 @@ Samba versions 3.6.3 and all versions previous to this are affected by a vulnera
 
   3. What mitigation strategies can you recommendations for the client to protect their server:
 
+   * Temporarily disable the Samba service until an upgrade can be performed.
+   * Schedule an upgrade to a version of Samba that is after 3.6.3
+   
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
