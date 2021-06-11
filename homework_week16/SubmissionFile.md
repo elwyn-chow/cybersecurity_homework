@@ -95,11 +95,11 @@ nmap --script samba-vuln-cve-2012-1182 192.168.0.10
 
   3. What mitigation strategies can you recommendations for the client to protect their server:
 
-    This vulnerability has an exceptionally high CVSS score of 10 because the attacker can exploit this vulnerability can grant the attacker root access and the attack can be executed over the Internet. Before executing any mitigration strategies, it's important to find out if the Metasploitable machine is exposed to the general public.
+    This vulnerability has an exceptionally high CVSS score of 10 because the attacker exploiting this vulnerability can grant the attacker root access and the attack can be executed over the Internet. Before executing any mitigration strategies, it's important to find out if the Metasploitable machine is exposed to the general public and what files are being shared.
     
     If Metasploitable is exposed to the general public, we need to resort to immediate action:
-    * Temporarily disable the Samba service until an upgrade can be performed.
-    * Schedule an upgrade to a version of Samba that is after 3.6.3
+    * disable the Samba service until an upgrade can be performed.
+    * schedule an upgrade to a version of Samba that is after 3.6.3
    
    If Metasploitable is not meant to be exposed to the general public, we should find out what the staff members are sharing on it.
    
