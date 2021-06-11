@@ -101,5 +101,16 @@ nmap --script samba-vuln-cve-2012-1182 192.168.0.10
     * Temporarily disable the Samba service until an upgrade can be performed.
     * Schedule an upgrade to a version of Samba that is after 3.6.3
    
+   If Metasploitable is not meant to be exposed to the general public, we should find out what the staff members are sharing on it.
+   
+   If staff members are just storing their favourite lolcat memes and pirated TV episodes:
+   * it is not that urgent that we correct the situation
+   * we need try to monitor and prevents staff members from putting sensitive data on it
+   * we should try to ensure that the firewall keeps Metasploitable behind it so no outside attackers get a foothold within our Intranet.
+   
+   If staff members are storing sensitive data on Metasploitable, we should be concerned about internal threats and:
+    * temporarily disable the Samba service until an upgrade can be performed.
+    * schedule an upgrade to a version of Samba that is after 3.6.3
+    
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
