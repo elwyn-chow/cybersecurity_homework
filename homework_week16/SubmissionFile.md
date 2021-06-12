@@ -105,7 +105,8 @@ nmap --script samba-vuln-cve-2012-1182 192.168.0.10
    
    If staff members are just storing their favourite lolcat memes and pirated TV episodes:
    * it is not that urgent that we correct the situation
-   * we need try to monitor and prevents staff members from putting sensitive data on it
+   * we need try to deter and prevent staff members from putting sensitive data on it by informing them not to do do that (eg via email)
+   * we may need to monitor the server to ensure that no sensitive data is being put on the server
    * we should try to ensure that the firewall keeps Metasploitable behind it so no outside attackers get a foothold within our Intranet
    * (maybe we should shut down the Samba service if people are storing illegal downloads on it and if we're concerned we'll get audited)
    
