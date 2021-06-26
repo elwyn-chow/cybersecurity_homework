@@ -33,20 +33,18 @@ It doesn't fully recover until 2020-02-23 23:00:00 - the complete recovery took 
 
 **Background:**  Due to the frequency of attacks, your manager needs to be sure that sensitive customer data on their servers is not vulnerable. Since Vandalay uses Nessus vulnerability scanners, you have pulled the last 24 hours of scans to see if there are any critical vulnerabilities.
 
-  - For more information on Nessus, read the following link: https://www.tenable.com/products/nessus
-
 **Task:** Create a report determining how many critical vulnerabilities exist on the customer data server. Then, build an alert to notify your team if a critical vulnerability reappears on this server.
 
-1. Upload the following file from the Nessus vulnerability scan.
-   - [Nessus Scan Results](resources/nessus_logs.csv)
-
-2. Create a report that shows the `count` of critical vulnerabilities from the customer database server.
-   - The database server IP is `10.11.36.23`.
-   - The field that identifies the level of vulnerabilities is `severity`.
+![Critical Vulnerabilities Report](screenshots/originals/step2_report.png)
+I created a report that shows the `count` of critical vulnerabilities from the customer database server `10.11.36.23`.
       
-3. Build an alert that monitors every day to see if this server has any critical vulnerabilities. If a vulnerability exists, have an alert emailed to `soc@vandalay.com`.
+![Alert settings 1](screenshots/originals/step2_alert_part1.png)
+![Alert settings 2](screenshots/originals/step2_alert_part2.png)
+![Alert settings 3](screenshots/originals/step2_alert_part3.png)
+I created an alert to email the SOC at soc@vandalay.com if there have been any critical vulnerabilities detected in the customer database server. The alert runs daily at midnight checking the previous day's results.
 
-Submit a screenshot of your report and a screenshot of proof that the alert has been created.
+![Alert saved successfully](screenshots/originals/step2_alert_saved.png)
+The alert was saved successfully.
 
 
 ### Step 3: Drawing the (base)line
