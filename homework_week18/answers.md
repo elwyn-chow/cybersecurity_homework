@@ -63,7 +63,7 @@ The attack started after 8 am. There were 34 events between 8 am and 9 am. 34 ev
 ![Attack reaches full strength](screenshots/originals/step3_attack_2.png)
 The attack is at full strength during the period between 9 am and 1 pm.
 
-![Attack starts](screenshots/originals/step3_attack_4.png)
+![Attack ends](screenshots/originals/step3_attack_3.png)
 The attack seems to end sometime between 1 pm and 2 pm when the events start to drop down to 34.
       
 3. Determine a baseline of normal activity and a threshold that would alert if a brute force attack is occurring.
