@@ -54,16 +54,24 @@ The alert was saved successfully.
 
 **Task:** Analyze administrator logs that document a brute force attack. Then, create a baseline of the ordinary amount of administrator bad logins and determine a threshold to indicate if a brute force attack is occurring.
 
-1. Upload the administrator login logs.
-   - [Admin Logins](resources/Administrator_logs.csv.zip)
-
 2. When did the brute force attack occur?
-   - Hints:
-     - Look for the `name` field to find failed logins.
-     - Note the attack lasted several hours.
 
+![Attack starts](screenshots/originals/step3_attack_0.png)
+The attack started after 8 am. There were 34 events between 8 am and 9 am. 34 events is higher than the average.
+
+![Attack reaches full strength](screenshots/originals/step3_attack_1.png)
+![Attack reaches full strength](screenshots/originals/step3_attack_2.png)
+The attack is at full strength during the period between 9 am and 1 pm.
+
+![Attack starts](screenshots/originals/step3_attack_4.png)
+The attack seems to end sometime between 1 pm and 2 pm when the events start to drop down to 34.
       
 3. Determine a baseline of normal activity and a threshold that would alert if a brute force attack is occurring.
+
+The average number of events is 12.8276.
+The highest number of events in a one hour period that occurred when there wasn't an attack was 23 events. This occurred between 4 and 5 am on 21 February 2020.
+
+Therefore, I believe that a baseline of normal activity should be less than 25 events in a one hour period.
 
 4. Design an alert to check the threshold every hour and email the SOC team at SOC@vandalay.com if triggered. 
 
