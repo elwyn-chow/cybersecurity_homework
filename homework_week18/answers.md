@@ -16,18 +16,18 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
 
     - Based on the report created, what is the approximate date and time of the attack?
 
-![Report Generated](screenshots/enhanced/step1_need_for_speed.png)
-
 The approximate date and time of the attack is 2020-02-23 at 14:30:00 ie 23 February 2020 around 2:30 pm.
 From the logs we can see:
 * the download speed drops to 7.87 megabits/s - in previous logs, the average speed was 108.1985 megabits/s.  
 * the upload speed drops to 1.83 megabits/s - in previous logs, the average speed was 8.9654 megabits/s.
 
+![Slowdown occurs around 2:30 pm](screenshots/enhanced/step1_need_for_speed.png)
+
     - How long did it take your systems to recover?
 
-![Recovery](screenshots/enhanced/step1_need_for_speed_recovery_with_captions.png)
-
 It doesn't fully recover until 2020-02-23 23:00:00 - the complete recovery took 8.5 hours.
+
+![Recovery](screenshots/enhanced/step1_need_for_speed_recovery_with_captions.png)
 
 ### Step 2: Are We Vulnerable? 
 
@@ -35,16 +35,21 @@ It doesn't fully recover until 2020-02-23 23:00:00 - the complete recovery took 
 
 **Task:** Create a report determining how many critical vulnerabilities exist on the customer data server. Then, build an alert to notify your team if a critical vulnerability reappears on this server.
 
-![Critical Vulnerabilities Report](screenshots/originals/step2_report.png)
+
 I created a report that shows the `count` of critical vulnerabilities from the customer database server `10.11.36.23`.
-      
+
+![Critical Vulnerabilities Report](screenshots/originals/step2_report.png)
+
+I created an alert to email the SOC at soc@vandalay.com if there have been any critical vulnerabilities detected in the customer database server. The alert runs daily at midnight checking the previous day's results.
+
 ![Alert settings 1](screenshots/originals/step2_alert_part1.png)
 ![Alert settings 2](screenshots/originals/step2_alert_part2.png)
 ![Alert settings 3](screenshots/originals/step2_alert_part3.png)
-I created an alert to email the SOC at soc@vandalay.com if there have been any critical vulnerabilities detected in the customer database server. The alert runs daily at midnight checking the previous day's results.
+
+The alert was saved successfully.
 
 ![Alert saved successfully](screenshots/originals/step2_alert_saved.png)
-The alert was saved successfully.
+
 
 
 ### Step 3: Drawing the (base)line
@@ -56,15 +61,20 @@ The alert was saved successfully.
 
 2. When did the brute force attack occur?
 
-![Attack starts](screenshots/originals/step3_attack_0.png)
+
 The attack started after 8 am. There were 34 events between 8 am and 9 am. 34 events is higher than the average.
+
+![Attack starts](screenshots/originals/step3_attack_0.png)
+
+The attack is at full strength during the period between 9 am and 1 pm.
 
 ![Attack reaches full strength](screenshots/originals/step3_attack_1.png)
 ![Attack reaches full strength](screenshots/originals/step3_attack_2.png)
-The attack is at full strength during the period between 9 am and 1 pm.
+
+The attack seems to end sometime between 1 pm and 2 pm when the events start to drop down to 34.
 
 ![Attack ends](screenshots/originals/step3_attack_3.png)
-The attack seems to end sometime between 1 pm and 2 pm when the events start to drop down to 34.
+
       
 3. Determine a baseline of normal activity and a threshold that would alert if a brute force attack is occurring.
 
