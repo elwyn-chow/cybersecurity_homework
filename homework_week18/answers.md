@@ -53,6 +53,8 @@ The alert was saved successfully.
 
 ![Alert saved successfully](screenshots/originals/step2_alert_saved.png)
 
+I also saved the search results as a report:
+![Report saved successfully](screenshots/originals/step2_report_all_time.png)
 
 
 ### Step 3: Drawing the (base)line
