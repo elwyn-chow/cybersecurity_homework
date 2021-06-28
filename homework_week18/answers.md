@@ -25,7 +25,7 @@ From the logs we can see:
 
     - How long did it take your systems to recover?
 
-It doesn't fully recover until 2020-02-23 23:00:00 - the complete recovery took 8.5 hours.
+It doesn't fully recover until 2020-02-23 23:00:00 - the complete recovery took approximately 8.5 hours.
 
 ![Recovery](screenshots/enhanced/step1_need_for_speed_recovery_with_captions.png)
 
