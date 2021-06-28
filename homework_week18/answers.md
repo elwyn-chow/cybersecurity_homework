@@ -29,6 +29,9 @@ It doesn't fully recover until 2020-02-23 23:00:00 - the complete recovery took 
 
 ![Recovery](screenshots/enhanced/step1_need_for_speed_recovery_with_captions.png)
 
+I also saved the search as a report:
+![Report](screenshots/originals/step1_need_for_speed_report.png)
+
 ### Step 2: Are We Vulnerable? 
 
 **Background:**  Due to the frequency of attacks, your manager needs to be sure that sensitive customer data on their servers is not vulnerable. Since Vandalay uses Nessus vulnerability scanners, you have pulled the last 24 hours of scans to see if there are any critical vulnerabilities.
@@ -36,9 +39,9 @@ It doesn't fully recover until 2020-02-23 23:00:00 - the complete recovery took 
 **Task:** Create a report determining how many critical vulnerabilities exist on the customer data server. Then, build an alert to notify your team if a critical vulnerability reappears on this server.
 
 
-I created a report that shows the `count` of critical vulnerabilities from the customer database server `10.11.36.23`.
+I created a search that shows the `count` of critical vulnerabilities from the customer database server `10.11.36.23`.
 
-![Critical Vulnerabilities Report](screenshots/originals/step2_report.png)
+![Critical Vulnerabilities Report](screenshots/originals/step2_search.png)
 
 I created an alert to email the SOC at soc@vandalay.com if there have been any critical vulnerabilities detected in the customer database server. The alert runs daily at midnight checking the previous day's results.
 
