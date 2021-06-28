@@ -90,15 +90,16 @@ Therefore, I believe that a baseline of normal activity should be less than 25 e
 
 4. Design an alert to check the threshold every hour and email the SOC team at SOC@vandalay.com if triggered. 
 
-Submit the answers to the questions about the brute force timing, baseline and threshold. Additionally, provide a screenshot as proof that the alert has been created.
- 
- 
-### Your Submission
-  
-In a word document, provide the following:
-  - Answers to all questions where indicated. 
-  - Screenshots where indicated.
+I created an alert to email the SOC at soc@vandalay.com if the number of failed logins exceed the baseline setting of 25 failures in an one hour period.
+The alert check runs hourly on the hour.
 
+![Alert settings 1](screenshots/originals/step3_alert_part1.png)
+![Alert settings 2](screenshots/originals/step3_alert_part2.png)
+![Alert settings 3](screenshots/originals/step3_alert_part3.png)
+
+I successfully saved the alert:
+
+![Alert saved successfully](screenshots/originals/step3_alert_saved.png)
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
