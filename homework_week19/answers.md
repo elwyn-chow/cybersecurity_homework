@@ -45,6 +45,8 @@ To prevent bots from locking out accounts, I would recommend one or more of thes
 
 #### Question 2
 
+##### Analysis
+
 We need better logs and intel. What's JobeCorp's IP addresses? Our logs aren't capturing src_ip. src_nt_domain isn't useful either - according to the Splunk Knowledge Manager Manual 4.1.7 that is the Windows NT domain containing the machines that generated the event ie our local domain.
 
 ![Logs don't show src_ip](screenshots/P1Q2_need_better_logs.png)
@@ -56,11 +58,23 @@ We need better logs and intel. What's JobeCorp's IP addresses? Our logs aren't c
 ### Part 2: Apache Webserver Attack:
 
 #### Question 1
-- Based on the geographic map, recommend a firewall rule that the networking team should implement.
-- Provide a "plain english" description of the rule.
-  - For example: "Block all incoming HTTP traffic where the source IP comes from the city of Los Angeles."
-- Provide a screen shot of the geographic map that justifies why you created this rule. 
-  
+
+##### Analysis
+
+There was a noticeably higher number of hits to the VSI Account logon page (/VSI_Account_login.php) from Ukraine. 
+
+![Map](screenshots/screenshots/P2Q1_map.png)
+
+Hits from Ukraine are 91.011 of the total hits to the login page:
+![Count by Country](screenshots/screenshots/P2Q1_count_by_country.png)
+
+The hits from the Ukraine are spread across multiple cities:
+![Count by Country and City](screenshots/screenshots/P2Q1_count_by_country.png)
+
+##### Mitigations
+
+To mitigate this threat, block all incoming HTTP traffic where the source IP comes from the country of Ukraine.
+
 #### Question 2
 
 - VSI has insider information that JobeCorp will launch the same webserver attack but use a different IP each time in order to avoid being stopped by the rule you just created.
