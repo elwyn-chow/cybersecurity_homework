@@ -44,9 +44,14 @@ To prevent bots from locking out accounts, I would recommend one or more of thes
 * Require the user to register with an authenticator app. When a request is made to reset the password, the user would need to use the authenticator app to confirm they are making a request to reset the password. 
 
 #### Question 2
-- VSI has insider information that JobeCorp attempted to target users by sending "Bad Logins" to lock out every user.
-- What sort of mitigation could you use to protect against this?
-  
+
+We need better logs and intel. What's JobeCorp's IP addresses? Our logs aren't capturing src_ip. src_nt_domain isn't useful either - according to the Splunk Knowledge Manager Manual 4.1.7 that is the Windows NT domain containing the machines that generated the event ie our local domain.
+
+![Logs don't show src_ip](screenshots/P1Q2_need_better_logs.png)
+
+##### Mitigations
+* If we can find out the IP addresses of the machines that JobeCorp intend to use, we could set the firewall to block them. 
+* If JobeCorp intend to create a DDOS using a botnet of zombies, we should implement one or more of the suggestions in Part 1 Question 1: introducing CAPTCHA, sending one-time-passcodes to a verified owner's mobile phone or require an authenticator app.
 
 ### Part 2: Apache Webserver Attack:
 
