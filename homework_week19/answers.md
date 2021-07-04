@@ -29,7 +29,7 @@ I examined the signatures of the events on 25 March 2020. The attacker caused an
 
 The screenshots below show that 37.8% of the events were an attempt to reset an accounts passowrd an 30.44% of events were accounts being locked out.
 
-![Examination of events that impacted users on 25 March 2020](screenshots/originals/P1Q1_top_signatures.png)
+![Examination of events that impacted users on 25 March 2020](screenshots/enhanced/P1Q1_top_signatures.png)
 
 The attack occurred between 9 am and 11 am. There were 2019 events during the attack (1258 in the first hour and 761 events in the second hour).
 ![Attack](screenshots/originals/P1Q1_attack.png)
@@ -49,7 +49,7 @@ To prevent bots from locking out accounts, I would recommend one or more of thes
 
 We need better logs and intel. What's JobeCorp's IP addresses? Our logs aren't capturing src_ip. src_nt_domain isn't useful either - according to the Splunk Knowledge Manager Manual 4.1.7 that is the Windows NT domain containing the machines that generated the event ie our local domain.
 
-![Logs don't show src_ip](screenshots/originals/P1Q2_need_better_logs.png)
+![Logs don't show src_ip](screenshots/enhanced/P1Q2_need_better_logs.png)
 
 ##### Mitigations
 * If we can find out the IP addresses of the machines that JobeCorp intend to use, we could set the firewall to block them. 
@@ -66,10 +66,10 @@ There was a noticeably higher number of hits to the VSI Account logon page (/VSI
 ![Map](screenshots/originals/P2Q1_map.png)
 
 Hits from Ukraine are 91.011 of the total hits to the login page:
-![Count by Country](screenshots/originals/P2Q1_count_by_country.png)
+![Count by Country](screenshots/enhanced/P2Q1_count_by_country.png)
 
 The hits from the Ukraine are spread across multiple cities:
-![Count by Country and City](screenshots/originals/P2Q1_count_by_country.png)
+![Count by Country and City](screenshots/enhanced/P2Q1_count_by_country.png)
 
 ##### Mitigations
 
