@@ -71,28 +71,43 @@ Hits from Ukraine are 91.011% of the total hits to the login page:
 The hits from the Ukraine are spread across multiple cities:
 ![Count by Country and City](screenshots/enhanced/P2Q1_count_by_country.png)
 
+It should be mentioned that this was a DDOS. It was not an attempt to brute force crack any passwords - we can see from the logs that there were very few 403 errors.
+
+![Events from Ukraine sorted by HTTP status](screenshots/originals/P2Q2_mainly_200_status.png)
+
 ##### Mitigations
 
 To mitigate this threat, block all incoming HTTP traffic where the source IP comes from the country of Ukraine.
 
 #### Question 2
 
-- VSI has insider information that JobeCorp will launch the same webserver attack but use a different IP each time in order to avoid being stopped by the rule you just created.
+##### Analysis
+I examined the events where the source IP address was in Ukraine to try to determine if any patterns were common to the events:
 
-- What other rules can you create to protect VSI from attacks against your webserver?
-  - Conceive of two more rules in "plain english". 
-  - Hint: Look for other fields that indicate the attacker.
-  
+![All events from Ukraine](screenshots/originals/P2Q2_attack_events.png)
 
+In particular, I examined the interesting fields:
+![All fields](screenshots/originals/P2Q2_all_fields.png)
 
-### Guidelines for your Submission:
-  
-In a word document, provide the following:
-- Answers for all questions.
-- Screenshots where indicated
+**All of the events had the same useragent value:** Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 2.0.50727987787; InfoPath.1)
 
-Submit your findings in BootCampSpot!
+![All events had the same useragent value](screenshots/originals/P2Q2_unique_fields_useragent.png)
 
----
+**Although the attacks came from three different IP addresses in three different cities, they were extremely well coordinated to attack at the same time (req_time.**
 
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+![All events had the same req_time](screenshots/originals/P2Q2_unique_fields_req_time.png)
+
+There were other extremely common fields that were obviously not interesting:
+* *file*, *uri* and *uri_path* were all the same because the bots were requesting the same URL.
+* *punct* is a field of the first 30 punctuation characters in the first line of the event. They are all the same because all the events use the same Apache log format.
+* all the *method* values were HTTP POST.
+* all the *status*, *version*, *status*, *linecount*, *bytes*, and *referer* values were the same in all the vents because the HTTP requests were identical.
+
+##### Mitigations
+
+The goal of DDOS is to overwhelm the web server. The attacks haven't tried to brute force crack any passwords. So the mitigation strategies in Part 1 Question 1 won't be effective.
+
+Here are rules to mitigate the attack against the web server:
+* Block any IP addresses that have the useragent value of "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 2.0.50727987787; InfoPath.1)"
+* Create a white list of IP addresses that can access the VSI Account logon page (/VSI_Account_login.php). All other IP addresses are blocked from using that page.
+
