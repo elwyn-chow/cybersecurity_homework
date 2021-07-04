@@ -73,7 +73,7 @@ The hits from the Ukraine are spread across multiple cities:
 
 It should be mentioned that this was a DDOS. It was not an attempt to brute force crack any passwords - we can see from the logs that there was only one 403 error.
 
-![Events from Ukraine sorted by HTTP status](screenshots/originals/P2Q2_mainly_200_status.png)
+![Events from Ukraine sorted by HTTP status](screenshots/enhanced/P2Q2_mainly_200_status.png)
 
 ##### Mitigations
 
@@ -87,7 +87,7 @@ I examined the events where the source IP address was in Ukraine to try to deter
 ![All events from Ukraine](screenshots/originals/P2Q2_attack_events.png)
 
 In particular, I examined the interesting fields:
-![All fields](screenshots/originals/P2Q2_all_fields.png)
+![All fields](screenshots/enhanced/P2Q2_all_fields.png)
 
 **All of the events had the same useragent value:** Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 2.0.50727987787; InfoPath.1)
 
