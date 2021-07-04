@@ -71,7 +71,7 @@ Hits from Ukraine are 91.011% of the total hits to the login page:
 The hits from the Ukraine are spread across multiple cities:
 ![Count by Country and City](screenshots/enhanced/P2Q1_count_by_country.png)
 
-It should be mentioned that this was a DDOS. It was not an attempt to brute force crack any passwords - we can see from the logs that there were very few 403 errors.
+It should be mentioned that this was a DDOS. It was not an attempt to brute force crack any passwords - we can see from the logs that there was only one 403 error.
 
 ![Events from Ukraine sorted by HTTP status](screenshots/originals/P2Q2_mainly_200_status.png)
 
