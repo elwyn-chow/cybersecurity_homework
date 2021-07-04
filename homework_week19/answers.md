@@ -6,10 +6,6 @@ In the previous class,  you set up your SOC and monitored attacks from JobeCorp.
 
 You are tasked with using your findings from the Master of SOC activity to answer questions about mitigation strategies.
 
-### System Requirements 
-
-You will be using the Splunk app located in the Ubuntu VM.
-
 ### Logs
 
 Use the same log files you used during the Master of SOC activity:
@@ -26,9 +22,27 @@ Use the same log files you used during the Master of SOC activity:
 Note: This is a public-facing windows server that VSI employees access.
  
 #### Question 1
-- Several users were impacted during the attack on March 25th.
-- Based on the attack signatures, what mitigations would you recommend to protect each user account? Provide global mitigations that the whole company can use and individual mitigations that are specific to each user.
-  
+
+##### Analysis
+
+I examined the signatures of the events on 25 March 2020. The attacker caused an impact to users by making a massive number of attempts to reset account passwords and caused the accounts to be locked out. 
+
+The screenshots below show that 37.8% of the events were an attempt to reset an accounts passowrd an 30.44% of events were accounts being locked out.
+
+![Examination of events that impacted users on 25 March 2020](screenshots/P1Q1_top_signatures.png)
+
+The attack occurred between 9 am and 11 am. There were 2019 events during the attack (1258 in the first hour and 761 events in the second hour).
+![Attack](screenshots/P1Q1_attack.png)
+
+From the high number of events withi a short period, I deduce that these attacks  automated.
+
+##### Mitigations
+
+To prevent bots from locking out accounts, I would recommend one or more of these options:
+* When a user wishes to reset a password, force them to pass a CAPTCHA test so the system to distiguish between a bot and real person making the request
+* When a user's account is created, require them to enter a mobile phone number.  When a request is made to reset the password, the system should send a one-time-password to the mobile phone. If an excessive number of requests are made to reset the account password, the system should not lock out the account but should stop sending texts to the phone.
+* Require the user to register with an authenticator app. When a request is made to reset the password, the user would need to use the authenticator app to confirm they are making a request to reset the password. 
+
 #### Question 2
 - VSI has insider information that JobeCorp attempted to target users by sending "Bad Logins" to lock out every user.
 - What sort of mitigation could you use to protect against this?
