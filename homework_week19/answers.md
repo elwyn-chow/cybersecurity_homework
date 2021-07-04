@@ -97,9 +97,9 @@ In particular, I examined interesting fields:
 I was curious how common that specific useragent was. 
 In all our Apache logs:
 * it was the 2nd most common useragent
-* all of the 1296 events with that useragent were part of the Ukrainian attack.\
+* all of the 1296 events with that useragent were part of the Ukrainian attack. That useragent was not used anywhere that wasn't malicious.
 
-![Top useragent values](screenshots/originals/P2Q2_top_useragents.png)
+![Top useragent values](screenshots/enhanced/P2Q2_top_useragents.png)
 
 **Although the attacks came from three different IP addresses in three different cities, they were extremely well coordinated to attack at the same time (req_time.**
 
