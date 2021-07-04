@@ -82,16 +82,24 @@ To mitigate this threat, block all incoming HTTP traffic where the source IP com
 #### Question 2
 
 ##### Analysis
-I examined the events where the source IP address was in Ukraine to try to determine if any patterns were common to the events:
+
+I examined the 1296 events where the source IP address was in Ukraine to try to determine if any patterns were common to the events:
 
 ![All events from Ukraine](screenshots/originals/P2Q2_attack_events.png)
 
-In particular, I examined the interesting fields:
+In particular, I examined interesting fields:
 ![All fields](screenshots/enhanced/P2Q2_all_fields.png)
 
 **All of the events had the same useragent value:** Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 2.0.50727987787; InfoPath.1)
 
 ![All events had the same useragent value](screenshots/originals/P2Q2_unique_fields_useragent.png)
+
+I was curious how common that specific useragent was. 
+In all our Apache logs:
+* it was the 2nd most common useragent
+* all of the 1296 events with that useragent were part of the Ukrainian attack.\
+
+![Top useragent values](screenshots/originals/P2Q2_top_useragents.png)
 
 **Although the attacks came from three different IP addresses in three different cities, they were extremely well coordinated to attack at the same time (req_time.**
 
