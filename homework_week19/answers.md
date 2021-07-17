@@ -34,7 +34,7 @@ The screenshots below show that 37.8% of the events were an attempt to reset an 
 The attack occurred between 9 am and 11 am. There were 2019 events during the attack (1258 in the first hour and 761 events in the second hour).
 ![Attack](screenshots/originals/P1Q1_attack.png)
 
-From the high number of events withi a short period, I deduce that these attacks were automated.
+From the high number of events within a short period, I deduce that these attacks were automated.
 
 ##### Mitigations
 
