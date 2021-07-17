@@ -1,0 +1,16 @@
+2019-03-25 14:34:50.551 org.sleuthkit.autopsy.keywordsearch.Server isRunning
+INFO: Solr server is running
+2019-03-25 14:34:51.911 org.sleuthkit.autopsy.casemodule.Case openAsCurrentCase
+INFO: Opened 556677 (556677_20190323_161143) in /root/casedata/RussianTeaRoom as the current case
+2019-03-25 14:34:52.204 org.sleuthkit.autopsy.corecomponents.DataContentTopComponent findInstance
+WARNING: Cannot find DataContentTopComponent component. It will not be located properly in the window system.
+2019-03-25 14:34:52.377 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB setPragmas
+INFO: sqlite-jdbc version 3.7.8 loaded in native mode
+2019-03-25 14:35:32.753 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Shutting down image gallery controller for case 556677 (556677_20190323_161143)
+2019-03-25 14:35:32.763 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB close
+INFO: Closing the drawable.db
+2019-03-25 14:35:32.764 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Completed shut down of image gallery controller for case 556677 (556677_20190323_161143)
+2019-03-25 14:35:32.784 org.sleuthkit.autopsy.casemodule.Case closeCurrentCase
+INFO: Closing current case 556677 (556677_20190323_161143) in /root/casedata/RussianTeaRoom

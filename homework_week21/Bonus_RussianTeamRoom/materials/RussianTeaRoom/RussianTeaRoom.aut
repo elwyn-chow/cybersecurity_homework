@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutopsyCase>
+  <SchemaVersion>4.0</SchemaVersion>
+  <CreatedDate>2019/03/23 16:11:43 (EDT)</CreatedDate>
+  <ModifiedDate>2019/03/23 16:11:44 (EDT)</ModifiedDate>
+  <CreatedByAutopsyVersion>4.10.0</CreatedByAutopsyVersion>
+  <SavedByAutopsyVersion>4.10.0</SavedByAutopsyVersion>
+  <Case>
+    <Name>556677_20190323_161143</Name>
+    <DisplayName>556677</DisplayName>
+    <Number>33456</Number>
+    <Examiner>Rocky Squirrel</Examiner>
+    <ExaminerPhone>703-777-9800</ExaminerPhone>
+    <ExaminerEmail>rsquirell@frostbite.com</ExaminerEmail>
+    <CaseNotes/>
+    <CaseType>Single-user case</CaseType>
+    <Database/>
+    <CaseDatabase>autopsy.db</CaseDatabase>
+    <TextIndex/>
+  </Case>
+</AutopsyCase>

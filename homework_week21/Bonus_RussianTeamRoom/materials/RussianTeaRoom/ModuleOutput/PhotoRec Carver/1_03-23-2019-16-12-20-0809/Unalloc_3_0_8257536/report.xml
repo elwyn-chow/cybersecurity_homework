@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml xmloutputversion='1.0'>
+  <metadata 
+  xmlns='http://www.forensicswiki.org/wiki/Category:Digital_Forensics_XML' 
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+    <dc:type>Carve Report</dc:type>
+  </metadata>
+  <creator>
+    <package>PhotoRec</package>
+    <version>7.0</version>
+    <build_environment>
+      <compiler>GCC 8.2</compiler>
+      <library name='libext2fs' version='1.44.5'/>
+      <library name='libewf' version='none'/>
+      <library name='libjpeg' version='libjpeg-turbo-1.5.2'/>
+      <library name='libntfs' version='libntfs-3g'/>
+    </build_environment>
+    <execution_environment>
+      <os_sysname>Linux</os_sysname>
+      <os_release>4.18.0-kali2-amd64</os_release>
+      <os_version>#1 SMP Debian 4.18.10-2kali1 (2018-10-09)</os_version>
+      <host>kali</host>
+      <arch>x86_64</arch>
+      <uid>0</uid>
+      <start_time>2019-03-23T16:12:21-0400</start_time>
+    </execution_environment>
+  </creator>
+  <source>
+    <image_filename>/root/casedata/556677/ModuleOutput/PhotoRec Carver/1_03-23-2019-16-12-20-0809/temp/Unalloc_3_0_8257536</image_filename>
+    <sectorsize>512</sectorsize>
+    <image_size>8257536</image_size>
+    <volume>
+      <byte_runs>
+        <byte_run offset='0' img_offset='8257536' len='65769984'/>
+      </byte_runs>
+    </volume>
+  </source>
+  <configuration>
+  </configuration>
+</dfxml>
